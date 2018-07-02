@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>Ví dụ minh họa cây quyết định</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script src="decision-tree-demo/dist/js/tabular-input.js"></script>
+    <link type='text/css' rel='stylesheet' href='decision-tree-demo/dist/css/tabular-input.min.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="decision-tree-demo/style.css" media="screen" />
+    <script type="text/javascript" src="./decision-tree.js"></script>
+    <script src="https://github.com/LexmarkWeb/csi.js/blob/master/src/csi.js"></script>
+
+</head>
+
+<body>
+    <br/>
+    <div class="container">
+        <div id="demo-2"></div>
+    </div>
+    <br>
+    <button type='button' onClick='addRow()' class="btn btn-primary">Thêm dữ liệu</button>
+    <button type='button' onClick='javascript:$("#demo-2").tabularInput("deleteRow")' class="btn btn-primary">Xóa dữ liệu</button>
+    <button type='button' onClick='setItem()' class="btn btn-primary">Tính toán</button>
+    <br/>
+    <hr>
+    <div class="tree" id="displayTree"></div>
+    <script type="text/javascript" src="decision-tree-demo/controls.js"></script>
+</body>
+
+</html>
