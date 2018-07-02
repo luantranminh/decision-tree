@@ -1,24 +1,9 @@
 decision-tree-js
 ================
 
-Small JavaScript implementation of algorithm for training [Decision Tree](http://en.wikipedia.org/wiki/Decision_tree) and [Random Forest](http://en.wikipedia.org/wiki/Random_forest) classifiers.
+Small JavaScript implementation of algorithm for training [Decision Tree](http://en.wikipedia.org/wiki/Decision_tree) classifiers.
 
-### Random forest demo ###
 
-Online demo: http://fiddle.jshell.net/7WsMf/show/light/
-
-![Random forest demo](https://raw.github.com/lagodiuk/decision-tree-js/master/random-forest-demo/demo_2d.png)
-
-### Decision tree demo ###
-
-Online demo: http://fiddle.jshell.net/92Jxj/show/light/
-
-![Decision tree demo](https://raw.github.com/lagodiuk/decision-tree-js/master/decision-tree-demo/demo_2d.png)
-
-### Toy example of usage ###
-Predicting sex of characters from 'The Simpsons' cartoon, using such features as weight, hair length and age
-
-Online demo: http://jsfiddle.net/xur98/
 ```javascript
 // Training set
 var data = 
@@ -42,15 +27,12 @@ var config = {
 // Building Decision Tree
 var decisionTree = new dt.DecisionTree(config);
 
-// Building Random Forest
-var numberOfTrees = 3;
-var randomForest = new dt.RandomForest(config, numberOfTrees);
 
 // Testing Decision Tree and Random Forest
 var comic = {person: 'Comic guy', hairLength: 8, weight: 290, age: 38};
 
 var decisionTreePrediction = decisionTree.predict(comic);
-var randomForestPrediction = randomForest.predict(comic);
+
 ```
-Data taken from presentation: http://www.cs.sjsu.edu/faculty/lee/cs157b/ID3-AllanNeymark.ppt
-"#decision tree" 
+
+
